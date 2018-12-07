@@ -120,8 +120,8 @@ $(".green-jewel").on("click", function(){
 function clear() {
     counter = 0;
     $(".random-number, .score").empty();
-    var newRandomNumber = Math.floor(Math.random() * ((99-10)+ 1) + 10);
-    $(".random-number").append(newRandomNumber);
+    randomNumber = Math.floor(Math.random() * ((99-10)+ 1) + 10);
+    $(".random-number").append(randomNumber);
 
 }
 
