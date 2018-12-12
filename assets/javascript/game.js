@@ -1,21 +1,31 @@
 $(document).ready(function () {
 
 //Set Variables
-// this version only allows numbers between 10 and 99 to display.
-var randomNumber = Math.floor(Math.random() * ((99-10)+ 1) + 10);
 
-$(".random-number").append(randomNumber);
 
 // The counters
 var counter = 0;
 var wins = 0;
 var losses = 0;
-var totalWin = 0;
-var totalLoss = 0;
 
 // You will be given a random number at the start of the game.
+// this version only allows numbers between 10 and 99 to display.
+var randomNumber = Math.floor(Math.random() * ((99-10)+ 1) + 10);
 
+$(".random-number").append(randomNumber);
 
+// Random numbers generated for start of game for each jewel.
+//Random number 1 - 4
+var redJewel = Math.floor(Math.random() * 4) + 1;
+
+//Random number 5 - 10
+var blueJewel = Math.floor(Math.random() * ((10 - 5) + 1)+ 5);
+
+//Random number 11 - 15
+var yellowJewel = Math.floor(Math.random() * ((15 - 11) + 1)+ 11);
+
+// Random number 16 - 20
+var greenJewel = Math.floor(Math.random() * ((20 - 16) + 1)+ 16);
 
 // There are four crystals below. By clicking on a crystal you will a specific amount of points to your total score.
 
@@ -24,9 +34,9 @@ var totalLoss = 0;
 
 $(".red-jewel").on("click", function(){
     //Random number 1 - 5
-    var redJewel = 2;
+    
     counter += redJewel;
-    console.log(counter);
+    console.log(redJewel);
     $(".score").text(counter);
 
     if(counter === randomNumber) {
@@ -45,10 +55,9 @@ $(".red-jewel").on("click", function(){
 });
 
 $(".blue-jewel").on("click", function(){
-    //Random number 5 - 7
-    var blueJewel = 5;
+    //Random number 5 - 10
     counter +=blueJewel;
-    console.log(counter);
+    console.log(blueJewel);
     $(".score").text(counter);
 
     if(counter === randomNumber) {
@@ -68,10 +77,10 @@ $(".blue-jewel").on("click", function(){
 });
 
 $(".yellow-jewel").on("click", function(){
-    //Random number 7 - 10
-    var yellowJewel = 7;
+    //Random number 10 - 15
+    
     counter += yellowJewel;
-    console.log(counter);
+    console.log(yellowJewel);
     $(".score").text(counter);
 
     if(counter === randomNumber) {
@@ -91,10 +100,11 @@ $(".yellow-jewel").on("click", function(){
 });
 
 $(".green-jewel").on("click", function(){
-    //Random number 10 - 15
-    var greenJewel = 10;
+    //Random number 15 - 20
+    
+    console.log(greenJewel);
     counter += greenJewel;
-    console.log(counter);
+    
     $(".score").text(counter);
 
     if(counter === randomNumber) {
@@ -123,6 +133,17 @@ function clear() {
     randomNumber = Math.floor(Math.random() * ((99-10)+ 1) + 10);
     $(".random-number").append(randomNumber);
 
+    //Random number 1 - 4
+    redJewel = Math.floor(Math.random() * 4) + 1;
+
+    //Random number 5 - 10
+    blueJewel = Math.floor(Math.random() * ((10 - 5) + 1)+ 5);
+
+    //Random number 11 - 15
+    yellowJewel = Math.floor(Math.random() * ((15 - 11) + 1)+ 11);
+
+    // Random number 16 - 20
+    greenJewel = Math.floor(Math.random() * ((20 - 16) + 1)+ 16);
 }
 
 // You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.

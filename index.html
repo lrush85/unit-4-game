@@ -15,9 +15,10 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-3">Crystal Collector Game</h1>
-            <p class="display-4 my-4">How to Play</p>
             <hr class="my-5">
-            <p>You will be given a random number at the start of the game.</p>
+            <p class="display-4 my-4">How to Play</p>
+            
+            <p class="my-2"> You will be given a random number at the start of the game.</p>
             <p class="my-2">There are four crystals below. By clicking on a crystal you will a specific amount of points to your total score.</p>
             <p class="my-2">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
             <p class="my-2">The value of each crystal is hidden from you until you click on it.</p>
@@ -28,7 +29,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="card ">
-              <div class="card-body">
+              <div class="card-body game-style">
                 <h3 class="card-title">Random Number</h3>
                 <p class="card-text random-number"></p>
               </div>
@@ -36,18 +37,17 @@
           </div>
           <div class="col-md-3">
                 <div class="card">
-                  <div class="card-body">
+                  <div class="card-body game-style">
                     <h3 class="card-title">Your Score</h3>
-                    <p class="card-text score"></p>
+                    <p class="card-text score">0</p>
                   </div>
                 </div>
               </div>
           <div class="col-md-6 col-offset-md-3">
             <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"></h3>
-                <p class="card-text">Wins: <span id="win"></span></p>
-                <p class="card-text">Losses: <span id="loss"></span></p>
+              <div class="card-body game-style">
+                <p class="card-text">Wins: <span id="win">0</span></p>
+                <p class="card-text">Losses: <span id="loss">0</span></p>
               </div>
             </div>
           </div>
@@ -56,16 +56,16 @@
 
         <div class="card-deck">
             <div class="card red-jewel">
-                <img class="card-img-top mx-auto jewel" src="./assets/images/red-jewel.png" alt="jewel" style="width: 150px;">
+                <img class="card-img-top mx-auto jewel" src="./assets/images/red-jewel.png" alt="jewel">
             </div>
             <div class="card blue-jewel">
-                <img class="card-img-top mx-auto" src="./assets/images/blue-jewel.png" alt="jewel" style="width: 150px;">
+                <img class="card-img-top mx-auto jewel" src="./assets/images/blue-jewel.png" alt="jewel">
             </div>
             <div class="card yellow-jewel">
-                <img class="card-img-top mx-auto" src="./assets/images/yellow-jewel.png" alt="jewel" style="width: 150px;">
+                <img class="card-img-top mx-auto jewel" src="./assets/images/yellow-jewel.png" alt="jewel">
             </div>
             <div class="card green-jewel">
-                <img class="card-img-top mx-auto" src="./assets/images/green-jewel.png" alt="jewel" style="width: 150px;">
+                <img class="card-img-top mx-auto jewel" src="./assets/images/green-jewel.png" alt="jewel">
             </div>
         </div>
 

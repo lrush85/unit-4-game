@@ -1,4 +1,14 @@
-.random-number, .score {
+body {
+    background-image: url("../images/random_grey_variations.png");
+    background-size: normal;
+    background-position: top left;
+}
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+div.game-style {
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -6,10 +16,76 @@
     font-size: 24px;
     color: #fcfcfc;
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    min-height: 106px;
+}
+
+h3.card-title {
+    font-size: 24px;
+}
+
+
+p.card-text {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.card-deck {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1.display-3 {
+    font-size: 50px;
+}
+
+p.display-4 {
+    font-size: 38px;
+}
+
+.card {
+    background-color: #e9ecef;
+    padding-top: 10px;
+}
+
+img.jewel {
+    width: 150px;
+}
+
+@media screen and (max-width: 991px) {
+    img.jewel {
+        width: 135px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img.jewel {
+        width: 100px;
+    }
+
+    h1.display-3 {
+        font-size: 40px;
+    }
+
+    p.display-4 {
+        font-size: 30px;
+    }
+
+    p.my-2 {
+        font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    div.card {
+        margin-top: 10px;
+    }
 }
